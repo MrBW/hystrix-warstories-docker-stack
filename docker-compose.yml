@@ -1,0 +1,14 @@
+connote-service:
+  build: ./connote_service
+  ports:
+    - "18080:8080"
+
+customer-service:
+  build: ./customer_service
+  ports:
+    - "28080:8080"
+
+routing-service:
+  build: ./routing_service
+  ports:
+    - "38080:8080"
